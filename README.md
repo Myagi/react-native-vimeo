@@ -7,12 +7,9 @@ the Vimeo player JS API (documented at https://developer.vimeo.com/player/js-api
 
 ## Installation
 
-1. Go through the instructions for installing the
-`React Native Webview Bridge` component, found here: https://github.com/alinz/react-native-webview-bridge.
+1. Run `npm install react-native-vimeo` within your project.
 
-2. Run `npm install react-native-vimeo` within your project.
-
-3. Compile and build to make sure everything is set up properly.
+2. Compile and build to make sure everything is set up properly.
 
 ## Usage
 
@@ -36,7 +33,7 @@ NOTE: Any `api` method calls must be made after `onReady` has been called.
 Internally, a webview loads a HTML page which is hosted via Github Pages. This HTML page loads your
 Vimeo video in an iFrame, then uses the Froogaloop JS library provided by Vimeo to pass event
 information through the webview bridge to your application. Vimeo API calls are made by sending a
-message to the HTML page via the webview bridge.
+message to the HTML page via the webview.
 
 Ideally, the HTML page content would just be passed as a string into the webview, however if that
 were the case then the Vimeo JS API would not function. As stated in the Vimeo JS API
