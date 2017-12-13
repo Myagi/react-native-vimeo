@@ -10,7 +10,7 @@ the Vimeo player JS API (documented at https://developer.vimeo.com/player/js-api
 1. Go through the instructions for installing the
 `React Native Webview Bridge` component, found here: https://github.com/alinz/react-native-webview-bridge.
 
-2. Run `npm install react-native-vimeo` within your project.
+2. Run `npm install react-native-vimeo -S` within your project.
 
 3. Compile and build to make sure everything is set up properly.
 
@@ -24,6 +24,7 @@ the Vimeo player JS API (documented at https://developer.vimeo.com/player/js-api
     onPlay={ () => console.log('Video is playing') }
     onPlayProgress={ data => console.log('Video progress data:', data) }
     onFinish={ () => console.log('Video is finished') }
+    height{300}
   />
 ```
 
